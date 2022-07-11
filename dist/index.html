@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstatíFut</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body style="background: #bdbcbc;">
+  <h1 class="text-center titulo">EstatíFut</h1>
+  <form class="form">
+
+    <div class="form-group">
+      <select id="campeonato" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
+        <option selected value=" ">Escolha o campeonato</option>
+        <option value="1">Brasileiro</option>
+        <option value="2">Budesliga</option>
+        <option value="3">Premier League</option>
+      </select>
+    </div>
+
+    <div class="form-group">    
+      <select id="estatistica" class="form-select form-select-sm mb-3" aria-label=".form-select-sm example"  required>
+        <option selected value=" ">Selecione a estatística a ser guardada</option>
+        <option value="1">Escanteios</option>
+        <option value="2">Gols Totais</option>
+        <option value="3">Gols por time</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <input type="number" id="valor" class="mb-3" >
+    </div>
+    
+    <br>
+
+    <button class="btn btn-primary" type="submit">Incluir</button>
+
+  </form>
+  <br>
+  <h2>MOSTRAR ESTATISTICAS</h2>
+  <div id="view">
+    <button class="btn btn-secondary" id="verBrasileiro" type="button">Brasileiro</button>
+    <button class="btn btn-secondary" id="verBudesliga">Budesliga</button>
+    <button class="btn btn-secondary" id="verPremier">Premier League</button>
+    <div id="listaDeEstatisticas">
+    </div>
+  </div>
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>
